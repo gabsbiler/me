@@ -12,10 +12,10 @@
   "devDependencies": {
     "nuxt": "^3.10.0",
     "vue": "^3.4.15",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuetify-nuxt-module": "^0.10.3"
   },
   "engines": {
     "node": ">=18"
   }
-  
 }

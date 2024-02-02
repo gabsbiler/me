@@ -1,18 +1,15 @@
 <template>
-  <div id="main-body">
-    <!-- <NuxtWelcome /> -->
-    <h1>Maintenance Mode</h1>
+  <div id="main-body" class="mx-auto">
+    <NavigationBar />
+    <NuxtPage />
+    <Footer />
   </div>
 </template>
-
 <style>
-#main-body {
-  display: flex;
-  height: 100vh;
+body{
+  background-color: rgb(227, 227, 227);
 }
-
-h1{
-  margin-inline: auto;
-  margin-block:auto;
+#main-body{
+  max-width: 80rem;
 }
 </style>

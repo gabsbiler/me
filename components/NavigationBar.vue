@@ -19,30 +19,21 @@ const routes = [
 ]
 </script>
 <template>
-    <header class="d-flex justify-space-between align-center">
-        <div>
-            <h5 class="text-h5">
-                <NuxtLink to="/">Gabriel Biler</NuxtLink>
-            </h5>
-        </div>
-        <div class="d-flex flex-row" >
-            <div v-for="route in routes" class="mx-2">
-                <NuxtLink :to="route.to">{{route.name}}</NuxtLink>
+    <VCard class="my-6">
+        <VCardText class="d-flex justify-space-between align-center">
+            <div>
+                <h5 class="text-h5">
+                    <NuxtLink to="/">Gabriel Biler</NuxtLink>
+                </h5>
             </div>
-        </div>
-        <div>
-            <VBtn>Hire Me</VBtn>
-        </div>
-    </header>
+            <div class="d-flex flex-row" >
+                <div v-for="route in routes" class="mx-2">
+                    <NuxtLink :to="route.to">{{route.name}}</NuxtLink>
+                </div>
+            </div>
+            <div>
+                <VBtn>Hire Me</VBtn>
+            </div>
+        </VCardText>
+    </VCard>
 </template>
-
-
-<style>
-header {
-    border-radius: .5rem;
-    margin: 1rem;
-    background-color: white;
-    padding-inline: 1rem;
-    padding-block:.5rem;
-}
-</style>
